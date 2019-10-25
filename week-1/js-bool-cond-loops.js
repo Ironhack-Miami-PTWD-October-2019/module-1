@@ -96,7 +96,7 @@ console.log(useSliceWithNegative); // ring
 // if(true) console.log("This is soooo true!");
 // else console.log("This is false!");
 
-// turnery operator
+// ternary operator
 true ? console.log("This is soooo true!") : console.log("This is false!");
 
 
