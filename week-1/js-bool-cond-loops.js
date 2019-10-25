@@ -38,7 +38,7 @@ console.log(`CHECK INDEXOF: ${str.indexOf("string")}`); // 17 (false)
 console.log(str.charAt(0)); // t
 
 // ‼️ string methods never mutate the string
-// substring(start, end)️️️
+// substring(start, end)
 // substr(start, howManyFromStart)
 // slice(start, end) and can accept negative numbers (counts from the last index) 
 
