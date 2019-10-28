@@ -1,0 +1,61 @@
+/* 1st way to make sure that our page is inside border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* 2nd way */
+/* the following two need to be combined because: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+/* this is to make sure that all the child elements as well get the border-box property */
+
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
+/* border-box tells the browser to account for any border and padding 
+in the values you specify for an element's width and height. 
+If you set an element's width to 100 pixels, that 100 pixels will include 
+any border or padding you added, and the content box will shrink to absorb that extra width */
+
+
+header {
+    color: blue;
+}
+
+/* nav > a {
+    color: green;
+} */
+
+.link {
+    color:pink;
+}
+.nature-img {
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: red; */
+    border: 2px red dotted;
+}
+
+li {
+    list-style-position: inside; /* https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position */
+}
+
+#list {
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+
+/* The comma is used for grouping, when the same rule applies for several selectors. */
+/* The space is a ‘descendant combinator’ and means that the element matched by the 
+sub-selector to the right of the space is a descendant (child, grandchild, etc.) 
+of the element matched by the sub-selector on the left-hand side of the space. */
+
+#list #unordered {
+    color: pink;;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HTML-CSS basics</title>
+        <!-- this is the comment in html -->
+                                    <!-- ./ => documents are on the same level   -->
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <!-- without semantic rules, you could structure your page as follows: -->
+        <!-- <div id="header">
+            this is header
+        </div>
+        <div id="main">
+            this main
+        </div>
+        <div id="footer">
+            this is footer
+        </div> -->
+
+        <!-- but you always want to use semantic rules because it's better for SEO and 
+        it's best-practice -->
+
+        <header>This is the header tag
+            <nav>
+                <a href="#" class="link"> Home</a>
+                <a href="#" class="link">About</a>
+            </nav>
+            <h1>This is our main title</h1>
+        </header>
+        <main>This is the main tag
+            <section>
+                <div class="welcome"> <!--  Divs are block elements. They are usually used as container for other elements -->
+                    <h2>Welcome</h2>
+                    <p>Welcome to the best page ever.</p> <!-- This is a paragraph. It is a block element -->
+                </div>
+                <figure>
+                    <img class="nature-img"  src="https://image.shutterstock.com/image-photo/spring-blossom-background-beautiful-nature-260nw-1033292395.jpg" alt="nature image">
+                    <figcaption>
+                        Source: <a href="/wikipedia">Wikipedia link</a>
+                    </figcaption>
+                </figure>
+                <em>this is the nature image</em>
+                <i>this is the nature image</i>
+
+            </section>
+            <article>
+                <h2>This is page about nature</h2>
+                <p> some super random text 
+                    <span> some random text in span </span> <!-- Spans are inline, also unstyled and used as a container for text usually -->
+                </p> 
+                <time timedate="25-09-2018"> September, 25th 2018 </time>
+                <!-- <video controls width="250">
+                    <source 
+                        src="https://www.youtube.com/watch?v=1gwglom4FeA" 
+                        width="250"
+                        controls
+                    />
+                </video> -->
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/1gwglom4FeA" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+
+                <section id="user-form">
+                    <form action="/some-page" method="get">
+                        <!-- <label for="user-name">Name</label>
+                        <input id="user-name" type="text" placeholder="Sandra"> -->
+                        <label>Name
+                            <input type="text" placeholder="Sandra">
+                        </label>
+                        <button>Submit</button>
+                    </form>
+                </section>
+            </article>
+            <section id="list">
+                <div id="unordered">
+                    <ul>
+                        This is an unordered list, where there is no particular order. Example
+                        with a shopping list:
+                        <li> 1 bread</li>
+                        <li> Cookie dough ice cream</li>
+                        <li> Tooth paste </li>
+                    </ul>
+                </div>
+                <div id="ordered">
+                    <ol>
+                        This is now an ordered list where the order matters, notice the bullet
+                        points were replaced with numbers:
+                        <li>Load the washing machine</li>
+                        <li>Add detergent</li>
+                        <li>Start the washing machine</li>
+                    </ol>
+                </div>
+            </section>
+
+        </main>
+        <footer>This is the footer tag
+            <small>Copyright October 2019</small>
+        </footer>
+    </body>
+</html>
