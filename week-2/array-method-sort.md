@@ -130,3 +130,4 @@ console.log(`original words: ${words}`); // original words: Hello,great,First,A,
 
 ### Extra resources
 - [W3Schools: JavaScript Array sort() Method](https://www.w3schools.com/jsref/jsref_sort.asp)
+- [Stackoverflow: How does JavaScript's sort() work?](https://stackoverflow.com/questions/1494713/how-does-javascripts-sort-work)
