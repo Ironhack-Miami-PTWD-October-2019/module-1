@@ -72,7 +72,7 @@ names.forEach(theName => console.log(theName))
 // alex
 ```
 
-__Plus__: short and readable.
+__Plus__: short and readable. <br>
 __Minus__: can't use the break and continue.
 
 ### [`for...of` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
@@ -107,7 +107,7 @@ for (const val of iterableStr) {
 // o
 ```
 
-__Plus__: This way is super used since it combines great readability with the ability to use _break_ and _continue_.
+__Plus__: This way is super used since it combines great readability with the ability to use _break_ and _continue_. <br>
 __Minus__: It's not yet compatible with all browsers.
 
 Happy coding! :heart:
