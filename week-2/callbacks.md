@@ -109,6 +109,6 @@ To help you understand better, this is the same as passing the second (callback)
 ```
 As you can see, the callback is [anonymous (unnamed) function](https://blog.scottlogic.com/2011/06/10/javascript-anonymous-functions.html) in this case.
 
-We will be heavily working with callbacks later on, especially during modules 2 and 3.
+We will be heavily working with asynchronous code that requires using callbacks (or something similar :wink: ) later on, especially during modules 2 and 3.
 
 Happy coding! :heart:
