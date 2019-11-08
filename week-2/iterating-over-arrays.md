@@ -1,4 +1,4 @@
-## The most common ways of iterating through arrays
+## The most common ways of iterating over arrays
 
 ### `for` loop
 
