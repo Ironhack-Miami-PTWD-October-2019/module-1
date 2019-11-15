@@ -15,7 +15,7 @@
 }
 
 
-#result{
+.result{
     font-size: 30px;
     padding: 10px;
     border: 1px solid black;
@@ -47,4 +47,20 @@
     display: flex;
     width: 100vw;
     justify-content: space-around;
+}
+
+
+.calc-all{
+    position: relative;
+    bottom: 80px;
+    left: 40%;
+    padding: 20px;
+    font-size: 24px;
+
+}
+
+
+.selected{
+    background-color: white;
+    color: black;
 }
