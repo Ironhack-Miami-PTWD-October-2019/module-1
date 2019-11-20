@@ -1,6 +1,6 @@
 console.log("I'm connected!");
 // In this lesson, we will cover:
-// 1. when do we need to use window.addEventListener("load", () => {}
+// 1. when do we need to use window.addEventListener("load", () => {})
 // 2. what is canvas? what is context?
 // 3. canvas grid - how it looks? share Uros' CodePen: https://codepen.io/Denzelzeldi/pen/KYaBLp
 // 4. static - create rectangle
