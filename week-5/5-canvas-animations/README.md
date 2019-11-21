@@ -23,7 +23,7 @@ function drawCanvas(x, y, w, h, color) {
 }
 ```
 
-The previous two functions () and drawCanvas() are included inside updateCanvas() below:
+The previous two functions `clearCanvas()` and `drawCanvas()` are included inside `updateCanvas()` below:
 
 ```jsx
 function updateCanvas() {
