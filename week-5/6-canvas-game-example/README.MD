@@ -1,4 +1,4 @@
-- Here is example how we would have to approach drawing images inside class methods if we would use ES5:
+- Here is an example how we would have to approach drawing images inside class methods if we would use ES5:
 
 ```jsx
 drawComponent(imgSource) {
@@ -14,3 +14,10 @@ drawComponent(imgSource) {
   };
 }
 ```
+
+- How to pick an image that has no background:
+
+1. Look for images on the Google
+2. click on **`Tools > Color > Transparent`** as shown below:
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_e49cf80fd0ac0e1d94ae1044cd862e49.png)
