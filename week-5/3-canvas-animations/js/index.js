@@ -59,20 +59,7 @@ function updateCanvas() {
 
 updateCanvas();
 
-// ************************ ROTATE ************************
-
-// HTML5 canvas provides rotate(angle) method which is used to rotate the canvas around
-// the current origin. This method only takes one parameter and that's the angle the canvas is rotated by.
-// This is a clockwise rotation measured in radians.
-
-// ************************ TRANSLATE ************************
-
-// https://www.w3schools.com/tags/canvas_translate.asp
-// used to move the canvas and its origin to a different point in the grid.
-// Here argument x is the amount the canvas is moved to the left or right,
-// and y is the amount it's moved up or down.
-// EXAMPLE: Draw a rectangle in position (10,10), set new (0,0) position to (70,70).
-// Draw same rectangle again (notice that the rectangle now starts in position (80,80)
+// *********** ROTATE and TRANSLATE ************************
 
 let img = new Image();
 let h = 1;
