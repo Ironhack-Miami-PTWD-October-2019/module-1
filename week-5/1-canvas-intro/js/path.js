@@ -49,7 +49,6 @@ ctx.lineTo(220, 80); // step 3
 // executes the drawing (of the line/path)
 ctx.stroke(); // step: 4
 
-// ctx.moveTo(220, 80);
 ctx.lineTo(220, 100);
 
 ctx.stroke();
@@ -70,41 +69,41 @@ ctx.lineTo(270, 270);
 ctx.stroke();
 ctx.closePath();
 
-// ****************************
-// draw circle
-// ****************************
+// // ****************************
+// // draw circle
+// // ****************************
 
-/* 
-    Angles in the arc function are measured in radians, not degrees.
-    To convert degrees to radians use the following JavaScript expression:
+// /*
+//     Angles in the arc function are measured in radians, not degrees.
+//     To convert degrees to radians use the following JavaScript expression:
 
-    radians = (Math.PI / 180) * degrees.
+//     radians = (Math.PI / 180) * degrees.
 
-*/
+// */
 
-// bigger - orange circle:
+// // bigger - orange circle:
 
 ctx.strokeStyle = "orange";
 ctx.lineWidth = 7;
 
 ctx.beginPath();
 
-// ctx.arc(x, y, radius, startAngle, endAngle)
+// // ctx.arc(x, y, radius, startAngle, endAngle)
 ctx.arc(150, 150, 50, 0, Math.PI * 2);
 
 ctx.stroke();
 
 ctx.closePath();
 
-// smaller - red "almost" circle:
+// // smaller - red "almost" circle:
 ctx.strokeStyle = "red";
 ctx.lineWidth = 4;
 
 ctx.beginPath();
 
-// follow the pattern:
-// ctx.arc(x, y, radius, startAngle, endAngle);
-ctx.arc(150, 150, 30, 0, 4); // endAngle max value is 6.3
+// // follow the pattern:
+// // ctx.arc(x, y, radius, startAngle, endAngle);
+ctx.arc(150, 150, 30, 0, 6.3); // endAngle max value is 6.3
 
 ctx.stroke();
 
