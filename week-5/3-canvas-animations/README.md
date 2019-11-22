@@ -74,7 +74,7 @@ This way is probably the most used, and in the code you can see how it's applied
 
 HTML5 canvas provides [`rotate(angle)`](https://www.w3schools.com/tags/canvas_rotate.asp) method which is used to rotate the canvas around the current origin. This method only takes one parameter and that's the angle the canvas is rotated by. This is a clockwise rotation measured in radians.
 
-[W3Schools](https://www.w3schools.com/tags/canvas_translate.asp) explans that `translate(x,y)` is used to move the canvas and its origin to a different point in the grid.
+[W3Schools](https://www.w3schools.com/tags/canvas_translate.asp) explains that `translate(x,y)` is used to move the canvas and its origin to a different point in the grid.
 Here argument `x` is the amount the canvas is moved to the left or right, and `y` is the amount it's moved up or down.
 
 EXAMPLE: If a rectangle is drawn in position (10,10), use translate to set new (0,0) position to (70,70).
