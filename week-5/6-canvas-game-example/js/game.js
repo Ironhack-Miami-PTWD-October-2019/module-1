@@ -16,11 +16,17 @@ class Game {
   start() {
     this.drawBackground();
     this.drawMainCharacters();
-    setInterval(() => {
+    const interval = setInterval(() => {
       this.clear();
       this.drawBackground();
       this.drawMainCharacters();
       this.superman.move();
+      if (this.superman.didCollide(this.fireball)) {
+        clearInterval(interval);
+        this.gameOver();
+        // console.log("collision");
+        // alert("BOOM!!!!");
+      }
       this.fireball.x -= 5;
       if (this.fireball.x <= -70) {
         this.fireball.x = 1000;
@@ -45,5 +51,18 @@ class Game {
   drawMainCharacters() {
     this.fireball.drawComponent("./images/fireball.png");
     this.superman.drawComponent("./images/superman.png");
+  }
+
+  gameOver() {
+    this.clear();
+    this.drawBackground();
+    this.ctx.font = "70px Arial bold";
+    this.ctx.textAlign = "center";
+    this.ctx.fillStyle = "red";
+    this.ctx.fillText(
+      "Game Over!",
+      this.canvas.width / 2,
+      this.canvas.height / 2
+    );
   }
 }
