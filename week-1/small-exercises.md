@@ -107,3 +107,35 @@ const fullName = `${firstName.charAt(0).toUpperCase() +
 // use newer syntax: template literal - backticks
 console.log(fullName); // Erick Sicard
 ```
+ ## 7. Using the `new Date().getDay()` method you can get the numerical representation of a current day in the week. The rule is that number 0 represents Sunday, number 1 represents Monday and so on till number 6 that represents Saturday. Using the given expression as an argument in the `switch` statement, output in the console which day is today. Ex. of return from `new Date().getDay()` is 1, you should see in the console `It's Monday`.
+
+```jsx
+console.log(new Date().getDay())
+
+// https://www.w3schools.com/js/js_date_methods.asp
+```
+- Solution:
+```jsx
+switch(new Date().getDay()){
+  case 0:
+    console.log("It's Sunday");
+    break;
+   case 1:
+    console.log("It's Monday");
+    break;
+   case 2:
+    console.log("It's Tuesday");
+    break;
+  case 3:
+    console.log("It's Wednesday");
+    break;
+   case 4:
+    console.log("It's Thursday");
+    break;
+  case 5:
+    console.log("It's Friday");
+    break;
+  case 6:
+    console.log("It's Saturday");
+}
+```
