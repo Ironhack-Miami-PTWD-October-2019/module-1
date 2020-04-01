@@ -107,7 +107,8 @@ const fullName = `${firstName.charAt(0).toUpperCase() +
 // use newer syntax: template literal - backticks
 console.log(fullName); // Erick Sicard
 ```
- ## 7. Using the `new Date().getDay()` method you can get the numerical representation of a current day in the week. The rule is that number 0 represents Sunday, number 1 represents Monday and so on till number 6 that represents Saturday. Using the given expression as an argument in the `switch` statement, output in the console which day is today. Ex. of return from `new Date().getDay()` is 1, you should see in the console `It's Monday`.
+ ## 7. Using the `new Date().getDay()` method you can get the numerical representation of a current day in the week. 
+The rule is that number 0 represents Sunday, number 1 represents Monday and so on till number 6 that represents Saturday. Using the given expression as an argument in the `switch` statement, output in the console which day is today. Ex. of return from `new Date().getDay()` is 1, you should see in the console `It's Monday`.
 
 ```jsx
 console.log(new Date().getDay())
