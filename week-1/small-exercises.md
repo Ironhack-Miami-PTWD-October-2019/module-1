@@ -1,6 +1,6 @@
 # Brain warm-up
 
-## 1. turn string to number
+## 1. Turn string to number
 
 ```jsx
 let price1 = '30.14xxx';
@@ -27,7 +27,7 @@ console.log(`price1 after: ${price1} ${typeof price1}`);
 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-');
 ```
 
-## 2. given the number as string, remove comma and add dot
+## 2. Given the number as string, remove comma and add dot
 
 ```jsx
 let num = '2,45';
@@ -43,7 +43,7 @@ console.log(`num after: ${num} ${typeof num}`);
 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-');
 ```
 
-## 3. turn number to string
+## 3. Turn number to string
 
 ```jsx
 let price3 = 55;
@@ -59,7 +59,7 @@ console.log(`price3 after: ${price3} ${typeof price3}`);
 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-');
 ```
 
-## 4. write if-else or switch that will console.log() message if someone is eligible to drink, and send them warning if they are not eligible to drink
+## 4. Write if-else or switch that will console.log() message if someone is eligible to drink, and send them warning if they are not eligible to drink
 
 ```jsx
 let age = 20;
@@ -72,7 +72,7 @@ age < 21
 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-');
 ```
 
-## 5. find js method that will help you to get rid of the white space around the string
+## 5. Find js method that will help you to get rid of the white space around the string
 
 ```jsx
 let weirdString = '   this string has some white space around    ';
@@ -87,7 +87,7 @@ console.log(`cleanedString: ${cleanedString.length}`); // 39
 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-');
 ```
 
-## 6. create two variables with your first name and last name, make the first letters capitalized and concatenate them
+## 6. Create two variables with your first name and last name, make the first letters capitalized and concatenate them
 
 ```jsx
 let firstName = 'erick';
