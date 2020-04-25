@@ -1,4 +1,4 @@
-console.log("I'm connected!");
+console.log('I am connected!');
 // In this lesson, we will cover:
 // 1. when do we need to use window.addEventListener("load", () => {})
 // 2. what is canvas? what is context?
@@ -13,11 +13,11 @@ console.log("I'm connected!");
 // window.addEventListener("load", () => {
 
 function moveRect(x, y) {
-  const theCanvas = document.getElementById("example");
+  const theCanvas = document.getElementById('example');
 
   // 2d context is where everything happens in canvas
   // it holds all the methods for drawing different shapes and animations
-  const ctx = theCanvas.getContext("2d");
+  const ctx = theCanvas.getContext('2d');
 
   // instead working with raw numbers (in our case width=300 and height=300 from canvas tag in index.html)
   // we can access those properties through "theCanvas" object
@@ -32,7 +32,7 @@ function moveRect(x, y) {
   ctx.clearRect(0, 0, width, height);
 
   // colors rectangle in the given color
-  ctx.fillStyle = "olive";
+  ctx.fillStyle = 'olive';
 
   // given method that creates rectangle - ctx.fillRect(x, y, width, height)
   ctx.fillRect(x, y, 50, 50);
