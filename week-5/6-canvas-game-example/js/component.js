@@ -49,14 +49,10 @@ class Component {
     // return false;
 
     if (
-      this.getRight() >= otherComp.x &&
-      // r1x + r1w >= r2x && // r1 right edge past r2 left
-      this.getLeft() <= otherComp.x + otherComp.width &&
-      // r1x <= r2x + r2w && // r1 left edge past r2 right
-      this.getBottom() >= otherComp.y &&
-      // r1y + r1h >= r2y && // r1 top edge past r2 bottom
-      this.getTop() <= otherComp.y + otherComp.height
-      // r1y <= r2y + r2h
+      this.getRight() >= otherComp.x && // comp1 right edge past comp2 left edge
+      this.getLeft() <= otherComp.x + otherComp.width && // comp1 left edge past comp2 right edge
+      this.getBottom() >= otherComp.y && // comp1 top edge past comp2 bottom
+      this.getTop() <= otherComp.y + otherComp.height // comp1 bottom edge past comp2 top edge
     ) {
       return true;
     }
