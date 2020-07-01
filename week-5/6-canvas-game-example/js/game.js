@@ -8,8 +8,8 @@ class Game {
   }
 
   init() {
-    this.canvas = document.getElementById("canvas");
-    this.ctx = this.canvas.getContext("2d");
+    this.canvas = document.getElementById('canvas');
+    this.ctx = this.canvas.getContext('2d');
     this.start();
   }
 
@@ -37,10 +37,10 @@ class Game {
   }
 
   drawBackground() {
-    this.ctx.fillStyle = "pink";
+    this.ctx.fillStyle = 'pink';
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-    this.ctx.fillStyle = "green";
-    this.ctx.font = "30px Arial";
+    this.ctx.fillStyle = 'green';
+    this.ctx.font = '30px Arial';
     this.ctx.fillText(`Score: ${this.score}`, 800, 50);
   }
 
@@ -49,20 +49,16 @@ class Game {
   }
 
   drawMainCharacters() {
-    this.fireball.drawComponent("./images/fireball.png");
-    this.superman.drawComponent("./images/superman.png");
+    this.fireball.drawComponent('./images/fireball.png');
+    this.superman.drawComponent('./images/superman.png');
   }
 
   gameOver() {
     this.clear();
     this.drawBackground();
-    this.ctx.font = "70px Arial bold";
-    this.ctx.textAlign = "center";
-    this.ctx.fillStyle = "red";
-    this.ctx.fillText(
-      "Game Over!",
-      this.canvas.width / 2,
-      this.canvas.height / 2
-    );
+    this.ctx.font = '70px Arial bold';
+    this.ctx.textAlign = 'center';
+    this.ctx.fillStyle = 'red';
+    this.ctx.fillText('Game Over!', this.canvas.width / 2, this.canvas.height / 2);
   }
 }
